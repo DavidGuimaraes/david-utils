@@ -2,6 +2,11 @@ package main.java.co.davidguimaraes.datastructures.queue;
 
 import java.util.Arrays;
 
+/**
+ * Author Derek Banas
+ *
+ * Class that implements the Queue and Priority Queue algorithms
+ */
 
 public class DerekQueue {
 
