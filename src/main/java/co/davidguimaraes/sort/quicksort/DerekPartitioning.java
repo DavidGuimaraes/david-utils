@@ -10,24 +10,30 @@ import java.util.Arrays;
 
 public class DerekPartitioning {
 
-    private static int[] theArray;
+    private int[] theArray;
 
-    private static int arraySize;
+    private int arraySize;
 
+    /**
+     * Main function. Previously used for testing the algorithm itself.
+     * Had it implementation commented for future reference, but the main
+     * goal is to make Derek's implementation general. In other words, it
+     * is not meant to be used only inside this class
+     */
     public static void main(String[] args) {
 
-        DerekPartitioning partitionArray = new DerekPartitioning(10);
+//        DerekPartitioning partitionArray = new DerekPartitioning(10);
 
-        partitionArray.generateRandomArray();
+//        partitionArray.generateRandomArray();
 
-        System.out.println(Arrays.toString(DerekPartitioning.theArray));
+//        System.out.println(Arrays.toString(DerekPartitioning.theArray));
 
         // Every item smaller than 35 will be on the left and
         // everything bigger will be on the right
 
-        partitionArray.partitionArray(35);
+//        partitionArray.partitionArray(35);
 
-        System.out.println(Arrays.toString(DerekPartitioning.theArray));
+//        System.out.println(Arrays.toString(DerekPartitioning.theArray));
 
     }
 
@@ -216,19 +222,19 @@ public class DerekPartitioning {
     }
 
 
-    public static int[] getTheArray() {
+    public int[] getTheArray() {
         return theArray;
     }
 
-    public static void setTheArray(int[] theArray) {
-        DerekPartitioning.theArray = theArray;
+    public void setTheArray(int[] theArray) {
+        this.theArray = theArray;
     }
 
-    public static int getArraySize() {
+    public int getArraySize() {
         return arraySize;
     }
 
-    public static void setArraySize(int arraySize) {
-        DerekPartitioning.arraySize = arraySize;
+    public void setArraySize(int arraySize) {
+        this.arraySize = arraySize;
     }
 }
