@@ -117,7 +117,7 @@ public class DerekStack {
 
     /**
      * Removes all values from the stack, each per time, respecting the stack's rules.
-     * It iterates the stack removing the value from the
+     * It iterates the stack removing the value from the top on every and each iteration
      */
     public void popAll(){
 
@@ -129,6 +129,10 @@ public class DerekStack {
 
     }
 
+    /**
+     * Displays the stack as it reverse and then calls the popAll() method in order to
+     * remove everything from the stack
+     */
     public void popDisplayAll(){
 
         String theReverse = "";
@@ -145,6 +149,9 @@ public class DerekStack {
 
     }
 
+    /**
+     * Derek Banas' algorithm for displaying the stack on the pretty way
+     */
     public void displayTheStack(){
 
         for(int n = 0; n < 61; n++)System.out.print("-");
@@ -181,27 +188,33 @@ public class DerekStack {
 
     }
 
+    /**
+     * Main function. Previously used for testing the algorithm itself.
+     * Had it implementation commented for future reference, but the main
+     * goal is to make Derek's implementation general. In other words, it
+     * is not meant to be used only inside this class
+     */
     public static void main(String[] args){
 
-        DerekStack theStack = new DerekStack(10);
+//        DerekStack theStack = new DerekStack(10);
 
-        theStack.push("10");
-        theStack.push("17");
-        theStack.push("13");
+//        theStack.push("10");
+//        theStack.push("17");
+//        theStack.push("13");
 
         // Look at the top value on the stack
 
-        theStack.peek();
+//        theStack.peek();
 
         // Remove values from the stack (LIFO)
 
-        theStack.pop();
-        theStack.pop();
-        theStack.pop();
+//        theStack.pop();
+//        theStack.pop();
+//        theStack.pop();
 
         // Add many to the stack
 
-        theStack.pushMany("R E D R U M");
+//        theStack.pushMany("R E D R U M");
 
         // Remove all from the stack
 
@@ -209,9 +222,9 @@ public class DerekStack {
 
         // Remove all from the stack and print them
 
-        theStack.popDisplayAll();
+//        theStack.popDisplayAll();
 
-        theStack.displayTheStack();
+//        theStack.displayTheStack();
 
 
     }
