@@ -1,4 +1,4 @@
-package main.java.co.davidguimaraes.datastructures.stack;
+package main.java.co.davidguimaraes.datastructures;
 
 import java.util.Arrays;
 
@@ -158,7 +158,7 @@ public class DerekStack {
     /**
      * Derek Banas' algorithm for displaying the stack on the pretty way
      */
-    public void displayTheStack(){
+    private void displayTheStack(){
 
         for(int n = 0; n < 61; n++)System.out.print("-");
 

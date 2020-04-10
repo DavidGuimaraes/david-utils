@@ -1,4 +1,4 @@
-package main.java.co.davidguimaraes.datastructures.queue;
+package main.java.co.davidguimaraes.datastructures;
 
 import java.util.Arrays;
 
