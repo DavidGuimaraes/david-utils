@@ -2,6 +2,12 @@ package main.java.co.davidguimaraes.datastructures.stack;
 
 import java.util.Arrays;
 
+/**
+ * Author Derek Banas
+ *
+ * Class that implements the Stack algorithms
+ */
+
 public class DerekStack {
 
     private String[] stackArray;
